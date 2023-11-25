@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="bg-[#F0F8FF] lg:flex lg:justify-between ">
+    
+    <aside class="lg:h-screen h-[70px] bg-[#6CB4EE] w-full lg:w-[15%] fixed top-0 left-0 flex items-center text-[#F0F8FF] lg:flex-col  justify-between">
+        
+        <div class="w-[30%] lg:w-full p-2 h-full lg:h-[20%] lg:pt-[1rem]">
+            <img src="./img//logo.png" alt="" class="lg:hidden h-full inline-block">
+            <img src="./img/white2.png" alt="" class="hidden lg:inline-block  lg:w-full">
+        </div>
+       
+        <div class="w-[60%] lg:w-full flex justify-evenly lg:justify-start lg:gap-12 lg:flex-col lg:h-[60%] lg:mt-8 lg:pl-4">
+            
+            <a href="./dashbord.html" class="flex flex-col justify-center align-center lg:justify-start lg:flex-row"><div>
+                <ion-icon name="home-sharp" class="text-3xl "></ion-icon>
+                <span class="text-[10px] lg:text-xl ">Dashboard</span>
+            </div></a>
+
+            <a href="./mteams.html" class="flex flex-col justify-center align-center  lg:justify-start lg:flex-row"><div>
+                <ion-icon name="people-sharp" class="text-3xl "></ion-icon>
+                <span class="text-[10px] lg:text-xl ">Teams</span>
+            </div></a>
+
+            <a href="./prj.html" class="flex flex-col justify-center align-center  lg:justify-start lg:flex-row"><div>
+                <ion-icon name="albums-sharp" class="text-3xl "></ion-icon>
+                <span class="text-[10px] lg:text-xl ">Projects</span>
+            </div></a>
+
+            
+        </div>
+        
+        <a href="" class=" flex flex-col justify-center items-center lg:flex-row lg:h-[10%] lg:pb-2 lg:self-start  lg:pl-4 "><div>
+            <ion-icon name="log-out-sharp" class="text-3xl"></ion-icon>
+            <span class="text-[10px] lg:text-xl">Logout</span>
+        </div></a>
+
+      
+
+    </aside>
+    <section class="mt-[5rem] lg:mt-[3rem] w-full lg:w-[75%] lg:ml-[20%]">
+
+        <h1 class="ml-[50%] translate-x-[-50%] mb-4 font-bold  text-lg text-[#8AB9F1] lg:text-4xl lg:mb-8 lg:ml-[58%]">Member teams</h1>
+        
+        <div>
+            <div class="w-full lg:mt-[5rem]">
+                <table class="table-auto w-11/12 ml-[4%]">
+                    <thead class="bg-[#6CB4EE]">
+                        <th class="text-[12px] lg:text-3xl border-2 border-cyan-500 p-1">Team's name</th>
+                        <th class="text-[12px] lg:text-3xl border-2 border-cyan-500 p-1">Product owner</th>
+                        <th class="text-[12px] lg:text-3xl border-2 border-cyan-500 p-1">Scrum master</th>
+                        <th class="text-[12px] lg:text-3xl border-2 border-cyan-500 p-1">Members</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-[12px] lg:text-2xl border-2 border-cyan-500 p-1">blala</td>
+                            <td class="text-[12px] lg:text-2xl border-2 border-cyan-500 p-1">blaaa</td>
+                            <td class="text-[12px] lg:text-2xl border-2 border-cyan-500 p-1">blaaa</td>
+                            <td class="text-[12px] lg:text-2xl border-2 border-cyan-500 p-1">blaaa</td>
+                        </tr>
+                        <tr>
+                            <td class="text-[12px] lg:text-2xl border-2 border-cyan-500 p-1">blala</td>
+                            <td class="text-[12px] lg:text-2xl border-2 border-cyan-500 p-1">blaaa</td>
+                            <td class="text-[12px] lg:text-2xl border-2 border-cyan-500 p-1">blaaa</td>
+                            <td class="text-[12px] lg:text-2xl border-2 border-cyan-500 p-1">blaaa</td>
+                        </tr>
+                        <tr>
+                            <td class="text-[12px] lg:text-2xl border-2 border-cyan-500 p-1">blala</td>
+                            <td class="text-[12px] lg:text-2xl border-2 border-cyan-500 p-1">blaaa</td>
+                            <td class="text-[12px] lg:text-2xl border-2 border-cyan-500 p-1">blaaa</td>
+                            <td class="text-[12px] lg:text-2xl border-2 border-cyan-500 p-1">blaaa</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+           
+        </div>
+
+    </section>
+    
+</body>
+</html>

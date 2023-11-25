@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="">
+<section class="bg-[#F0F8FF] flex flex-col lg:flex-row lg:justify-between ">
+    
+    <section class="lg:h-screen h-[70px] bg-[#6CB4EE] w-full lg:w-[15%] fixed top-0 left-0 flex items-center text-[#F0F8FF] lg:flex-col  justify-between">
+        
+        <div class="w-[30%] lg:w-full p-2 h-full lg:h-[20%] lg:pt-[1rem]">
+            <img src="./img//logo.png" alt="" class="lg:hidden h-full inline-block">
+            <img src="./img/white2.png" alt="" class="hidden lg:inline-block  lg:w-full">
+        </div>
+       
+        <div class="w-[60%] lg:w-full flex justify-evenly lg:justify-start lg:gap-12 lg:flex-col lg:h-[60%] lg:mt-8 pl-4">
+            
+            <a href="./dashbord.html" class="flex flex-col justify-center align-center lg:justify-start lg:flex-row"><div>
+                <ion-icon name="home-sharp" class="text-2xl "></ion-icon>
+                <span class="text-[10px] lg:text-xl ">Dashboard</span>
+            </div></a>
+
+            <a href="./mteams.html" class="flex flex-col justify-center align-center  lg:justify-start lg:flex-row"><div>
+                <ion-icon name="people-sharp" class="text-2xl "></ion-icon>
+                <span class="text-[10px] lg:text-xl ">Teams</span>
+            </div></a>
+
+            <a href="./prj.html" class="flex flex-col justify-center align-center  lg:justify-start lg:flex-row"><div>
+                <ion-icon name="albums-sharp" class="text-2xl "></ion-icon>
+                <span class="text-[10px] lg:text-xl ">Projects</span>
+            </div></a>
+
+            
+        </div>
+        
+        <a href="" class=" flex flex-col justify-center items-center lg:flex-row lg:h-[10%] lg:pb-2 lg:self-start "><div>
+            <ion-icon name="log-out-sharp" class="text-2xl ml-3"></ion-icon>
+            <span class="text-[10px] lg:text-xl">Logout</span>
+        </div></a>
+
+      
+
+    </section>
+    <section class="mt-[5rem] lg:mt-[1rem] w-full lg:w-[75%] lg:ml-[20%]">
+
+        <h1 class="ml-[50%] translate-x-[-50%] mb-4 font-bold  text-lg text-[#8AB9F1] lg:text-4xl lg:mb-8 lg:ml-[65%]">Member Details</h1>
+        <div class="w-[97%] ml-[1%] border-2 border-cyan-500 rounded-lg flex p-1">
+            <div class="w-[40%] ">
+                <img src="./img/774-1696615710.jpg" alt="" class="w-11/12 rounded-lg ">
+            </div>
+            <div class="w-[55%] flex flex-col justify-around">
+
+                <div class="flex flex-col lg:flex-row lg:justify-around border-b-2">
+                    <span class="font-semibold">Full name:</span>
+                    <span>Soufiane ABOUNASR</span>
+                </div>
+                <div class="flex flex-col lg:flex-row lg:justify-around border-b-2">
+                    <span class="font-semibold">Email:</span>
+                    <span>soufian@mail.com</span>
+                </div>
+                <div class="flex flex-col lg:flex-row lg:justify-around border-b-2">
+                    <span class="font-semibold">Role:</span>
+                    <span>Full stack developer</span>
+                </div>
+                <div class="flex flex-col lg:flex-row lg:justify-around border-b-2">
+                    <span class="font-semibold">Team:</span>
+                    <span>NIGHTCRAWLERS</span>
+                </div>
+                
+                
+                
+                
+            </div>
+        </div>
+
+    </section>
+
+
+</section>
+</body>
+</html>
