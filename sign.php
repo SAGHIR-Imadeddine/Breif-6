@@ -1,4 +1,48 @@
-<!-- <!DOCTYPE html>
+
+
+<?php
+// ____________________________________________________________________________
+/*require_once('./conn.php');
+
+function test_input($data) {
+     
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+  
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+     
+    $username = test_input($_POST["username"]);
+    $password = test_input($_POST["password"]);
+    $stmt = $conn->prepare("SELECT * FROM adminlogin");
+    $stmt->execute();
+    $users = $stmt->fetchAll();
+     
+    foreach($users as $user) {
+         
+        if(($user['username'] == $username) && 
+            ($user['password'] == $password)) {
+                header("location: adminpage.php");
+        }
+        else {
+            echo "<script language='javascript'>";
+            echo "alert('WRONG INFORMATION')";
+            echo "</script>";
+            die();
+        }
+    }
+}
+________________________________________________________________________________________________
+// if ($user['role'] == 'admin') {
+        //     header('Location: admin_dashboard.php');
+        // }else {
+        //     header('Location: user_dashboard.php');
+        // }
+ */
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -28,7 +72,7 @@
             </form>
         </div>
         <div class="form-container sign-in">
-            <form method="post" action="">
+            <form method="post" action="login.php">
                 <h1>Sign In</h1>
                 <span>welcome back</span>
                 <input type="email" placeholder="Email" name="email">
@@ -47,7 +91,7 @@
                 <div class="toggle-panel toggle-right">
                     <h1>Hello, Friend!</h1>
                     <p>Register with your personal details and welcome to <b>DATAWARE</b></p>
-                    <button class="hidden" id="register">Sign Up</button>
+                    <button class="hidden" id="register"  type="submit">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -70,4 +114,5 @@
 
 </body>
 
-</html> -->
+</html>
+
